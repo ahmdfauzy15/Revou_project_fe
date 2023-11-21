@@ -43,7 +43,7 @@ body {
   line-height: 1.6;
   color: var(--color-gray-200);
   overflow-x: hidden;
-  background: var(--color-bg);
+  background: linear-gradient(to right, #00c2a8, #b43f21);
   font-size: 0.9rem;
 }
 
@@ -100,7 +100,7 @@ img {
 /* ====================    NAV   ========================= */
 
 nav {
-  background: var(--color-primary);
+  background: linear-gradient(to right, #00c2a8, #b43f21);
   width: 100vw;
   height: 4.5rem;
   position: fixed;
@@ -176,7 +176,7 @@ nav button {
 /* ====================    CATEGORY BUTTON   ========================= */
 
 .category__button {
-  background: var(--color-primary-light);
+  background: rgb(11, 224, 196);
   color: var(--color-primary);
   display: inline-block;
   padding: 0.5rem 1rem;
@@ -187,7 +187,7 @@ nav button {
 }
 
 .category__button:hover {
-  color: var(--color-white);
+  color: black;
 }
 
 /* ====================    GENERAL POST   ========================= */
@@ -262,7 +262,7 @@ nav button {
 /* ====================    FOOTER  ========================= */
 
 footer {
-  background: var(--color-gray-900);
+  background: linear-gradient(to right, #00c2a8, #b43f21);
   padding: 5rem 0 0;
   box-shadow: inset 0 1.5rem 1.5rem rgba(0, 0, 0, 0.2);
 }
@@ -368,11 +368,11 @@ footer ul a:hover {
   display: inline-block;
   width: fit-content;
   padding: 0.6rem 1.2rem;
-  background-color: var(--color-primary);
+  background-color: rgb(0, 245, 253);
   border-radius: var(--card-border-radius-2);
   cursor: pointer;
   transition: var(--transition);
-  color: var(--color-white);
+  color: black;
   
 }
 
@@ -637,7 +637,7 @@ footer ul a:hover {
 
 
 /*contact start*/
-main
+/* main
 {
     display: flex;
     flex-direction: column;
@@ -750,7 +750,169 @@ main
     color: #69f0ae;
     cursor: pointer;
 }
+ */
 
+ /* Contact Form Styling */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin: auto;
+}
+
+.title-contact {
+  font-size: 50px;
+  font-weight: bold;
+  padding: 1.5% 0;
+}
+
+.title-info-contact {
+  padding-bottom: 2%;
+}
+
+.form-contact {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  padding: 2%;
+  background: linear-gradient(to right, #00c2a8, #b43f21);
+  border-radius: 10px; /* Add rounded corners */
+}
+
+.input-group-contact, .textarea-group-contact {
+  padding: 1% 0;
+}
+
+.form-contact input, 
+.form-contact textarea {
+  color: #333; /* Darken text color for better readability */
+  width: 100%;
+  background-color: #fff; /* Set a white background color */
+  border: 1px solid #ccc; /* Add a subtle border */
+  padding: 1.5%;
+  font-size: 20px;
+}
+
+.form-contact input:focus, 
+.form-contact textarea:focus {
+  background-color: #f9f9f9; /* Lighten background color on focus */
+  outline: transparent;
+  border-bottom: 2px solid #69f0ae;
+}
+
+.form-contact input::placeholder, 
+.form-contact textarea::placeholder {
+  color: #999; /* Adjust placeholder text color */
+}
+
+.form-contact label {
+  color: #555; /* Darken label text color */
+  position: relative;
+  left: 0.5em;
+  top: -2em;
+  cursor: auto;
+  transition: 0.3s ease all;
+}
+
+.form-contact input:focus ~ label, 
+.form-contact input:not(:placeholder-shown) ~ label,
+.form-contact textarea:focus ~ label, 
+.form-contact textarea:not(:placeholder-shown) ~ label {
+  top: -4em;
+  color: #69f0ae;
+  font-size: 15px;
+}
+
+.button-div-contact {
+  display: flex;
+  justify-content: center;
+}
+
+.form-contact button {
+  padding: 2%;
+  width: 30%;
+  border: 1px solid #212121;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 18px;
+  background-color: rgb(22, 219, 219);
+  color: #fff; /* Set button text color to white */
+  box-shadow: 0 0 10px #212121;
+}
+
+.form-contact button:hover {
+  background-color: #424242;
+  color: #69f0ae;
+  cursor: pointer;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 1200px)
+{
+    .form-contact
+    {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 680px)
+{
+    .form-contact
+    {
+		width: 90%;
+    }
+}
+
+@media screen and (max-width: 500px)
+{
+	.title-contact
+	{
+		font-size: 40px;
+		padding-top: 6%;
+	}
+
+	.title-info-contact
+	{
+		font-size: 13px;
+	}
+	
+	.form-contact
+	{
+		padding: 6% 4%;
+		padding-top: 15%;
+	}
+
+	.input-group-contact, .textarea-group-contact
+    {
+		padding: 3% 0;
+	}
+	
+	input-contact, textarea
+	{
+		font-size: 15px;
+	}
+
+	input-contact:focus ~ label, input:not(:placeholder-shown) ~ label
+	{
+		top: -3.5em;
+		left: 0.1em;
+	}
+	
+	textarea-contact:focus ~ label, textarea:not(:placeholder-shown) ~ label
+	{
+		top: -8.5em;
+		left: 0.2em;
+    }
+    
+    button
+    {
+        font-size: 15px;
+    }
+}
+/*contact end*/
 
 /* Media queries */
 
@@ -819,7 +981,7 @@ main
 /*contact end*/
 
 /*sign start*/
-.form__section-sign {
+/* .form__section-sign {
   display: grid;
   place-items: center;
   height: 100vh;
@@ -886,9 +1048,95 @@ align-items: center;
 
 .form__section-sign small a {
   color: var(--color-primary);
-}
+} */
 
 /*sign end*/
+/*sign start*/
+/* Center the form vertically and horizontally */
+.form__section-sign {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(to right, #b43f21,  #00c2a8);
+  padding: 20px; /* Add padding to create space around the form */
+}
+
+/* Set the maximum width of the form container */
+.form__section-container-sign {
+  width: 100%; /* Adjust as needed */
+  max-width: 400px; /* Set the maximum width */
+}
+
+/* Adjust the margin of the form heading */
+.form__section-container-sign h2 {
+  margin-top: 20px; /* Adjust as needed */
+}
+
+/* Style for error messages */
+.alert__message-sign {
+  padding: 0.8rem 1.4rem;
+  margin-bottom: 1rem;
+  border-radius: var(--card-border-radius-2);
+}
+
+/* Style for error messages with a red background */
+.alert__message.error-sign {
+  background: var(--color-red-light);
+  color: var(--color-red);
+}
+
+/* Style for success messages with a green background */
+.alert__message.success-sign {
+  background: var(--color-green-light);
+  color: var(--color-green);
+}
+
+/* Style for the form container */
+.form__section-sign form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Style for form controls */
+.form__control-sign {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+/* Style for inline form controls */
+.form__control.inline-sign {
+  flex-direction: row;
+  align-items: center;
+}
+
+/* Style for input, textarea, and select */
+.form__section-sign input, 
+.form__section-sign textarea, 
+.form__section-sign select {
+  padding: 0.8rem 1.4rem;
+  background-color: #f5f5f5; /* Set a light gray background color */
+  border-radius: var(--card-border-radius-2);
+  resize: none;
+  color: #333; /* Set a dark color for text */
+}
+
+/* Style for small text in the form */
+.form__section-sign small {
+  margin-top: 1rem;
+  display: block;
+  font-weight: bold; /* Set text to bold */
+  font-style: italic; /* Set text to italic (adjust as needed) */
+}
+
+/* Style for small text links in the form */
+.form__section-sign small a {
+  color: #0b3561; /* Set a link color */
+}
+/*sign end*/
+
 
 .dashboard {
   margin-top: 6rem;
